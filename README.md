@@ -27,9 +27,9 @@ A list of JSON objects, each representing a user that Elon Musk is following on 
 
 #### Fields
 
-* `id: The unique identifier for the user.
-* name: The user's real name.
-* username: The user's Twitter handle.
+* `id`: The unique identifier for the user.
+* `name`: The user's real name.
+* `username`: The user's Twitter handle.
 
 #### Example
 

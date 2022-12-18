@@ -33,7 +33,7 @@ A list of JSON objects, each representing a user that Elon Musk is following on 
 
 #### Example
 
-```
+```json
 {
   "id": "1234567890",
   "name": "John Smith",
@@ -59,44 +59,44 @@ A list of JSON objects, each representing a tweet made by Elon Musk.
 
 #### Fields
 
-- "entities": information about various entities mentioned in the tweet, such as URLs and hashtags. 
-  - "urls":
-    - "start": the start position of the URL within the tweet.
-    - "end": the end position of the URL within the tweet.
-    - "url": the URL as it appears in the tweet text.
-    - "expanded_url": the fully expanded version of the URL.
-    - "display_url": the shortened version of the URL that is displayed to users.
-    - "media_key": a unique identifier for media attached to the tweet.
-- "reply_settings": who the tweet is intended to be visible to. Possible values include "everyone" and "followers".
-- "author_id": the unique identifier of the user who created the tweet.
-- "context_annotations": an array of entities mentioned in the tweet and the domain they belong to.
-  - "domain": 
-    - "id": a unique identifier for the domain.
-    - "name": the name of the domain.
-    - "description": a description of the domain.
-  - "entity": 
-    - "id": a unique identifier for the entity.
-    - "name": the name of the entity.
-    - "description": a description of the entity.
-- "lang": the language of the tweet text.
-- "text": the text of the tweet.
-- "edit_history_tweet_ids": an array of unique identifiers of tweet versions in the edit history.
-- "public_metrics": metrics about the tweet.
-  - "retweet_count": number of times the tweet has been retweeted.
-  - "reply_count": number of replies to the tweet.
-  - "like_count": number of likes the tweet has received.
-  - "quote_count": number of times the tweet has been quoted in other tweets.
-- "attachments": information about media attached to the tweet.
-  - "media_keys": an array of unique identifiers for media attached to the tweet.
-- "conversation_id": the unique identifier of the conversation the tweet belongs to.
-- "possibly_sensitive": a boolean True or False value indicating whether the tweet may contain sensitive content.
-- "id": the unique identifier of the tweet.
-- "created_at": the date and time the tweet was created.
-- "source": the source from which the tweet was sent.
+- `entities`: information about various entities mentioned in the tweet, such as URLs and hashtags. 
+  - `urls`:
+    - `start`: the start position of the URL within the tweet.
+    - `end`: the end position of the URL within the tweet.
+    - `url`: the URL as it appears in the tweet text.
+    - `expanded_url`: the fully expanded version of the URL.
+    - `display_url`: the shortened version of the URL that is displayed to users.
+    - `media_key`: a unique identifier for media attached to the tweet.
+- `reply_settings`: who the tweet is intended to be visible to. Possible values include "everyone" and "followers".
+- `author_id`: the unique identifier of the user who created the tweet.
+- `context_annotations`: an array of entities mentioned in the tweet and the domain they belong to.
+  - `domain`: 
+    - `id`: a unique identifier for the domain.
+    - `name`: the name of the domain.
+    - `description`: a description of the domain.
+  - `entity`: 
+    - `id`: a unique identifier for the entity.
+    - `name`: the name of the entity.
+    - `description`: a description of the entity.
+- `lang`: the language of the tweet text.
+- `text`: the text of the tweet.
+- `edit_history_tweet_ids`: an array of unique identifiers of tweet versions in the edit history.
+- `public_metrics`: metrics about the tweet.
+  - `retweet_count`: number of times the tweet has been retweeted.
+  - `reply_count`: number of replies to the tweet.
+  - `like_count`: number of likes the tweet has received.
+  - `quote_count`: number of times the tweet has been quoted in other tweets.
+- `attachments`: information about media attached to the tweet.
+  - `media_keys`: an array of unique identifiers for media attached to the tweet.
+- `conversation_id`: the unique identifier of the conversation the tweet belongs to.
+- `possibly_sensitive`: a boolean True or False value indicating whether the tweet may contain sensitive content.
+- `id`: the unique identifier of the tweet.
+- `created_at`: the date and time the tweet was created.
+- `source`: the source from which the tweet was sent.
 
 #### Example
 
-```
+```json
 {
   "entities": {
     "urls": [

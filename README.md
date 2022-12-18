@@ -59,6 +59,9 @@ A list of JSON objects, each representing a tweet made by Elon Musk.
 
 #### Fields
 
+- `text`: **the text of the tweet**.
+- `id`: the unique identifier of the tweet.
+- `created_at`: the date and time the tweet was created.
 - `entities`: information about various entities mentioned in the tweet, such as URLs and hashtags. 
   - `urls`:
     - `start`: the start position of the URL within the tweet.
@@ -79,7 +82,6 @@ A list of JSON objects, each representing a tweet made by Elon Musk.
     - `name`: the name of the entity.
     - `description`: a description of the entity.
 - `lang`: the language of the tweet text.
-- `text`: the text of the tweet.
 - `edit_history_tweet_ids`: an array of unique identifiers of tweet versions in the edit history.
 - `public_metrics`: metrics about the tweet.
   - `retweet_count`: number of times the tweet has been retweeted.
@@ -90,8 +92,6 @@ A list of JSON objects, each representing a tweet made by Elon Musk.
   - `media_keys`: an array of unique identifiers for media attached to the tweet.
 - `conversation_id`: the unique identifier of the conversation the tweet belongs to.
 - `possibly_sensitive`: a boolean True or False value indicating whether the tweet may contain sensitive content.
-- `id`: the unique identifier of the tweet.
-- `created_at`: the date and time the tweet was created.
 - `source`: the source from which the tweet was sent.
 
 #### Example
